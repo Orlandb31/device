@@ -1,0 +1,197 @@
+#builder {
+    background-color: white !important;
+
+    .editor {
+        border-right: 1px solid rgb(221, 221, 221);
+        background-color: white;
+        padding-top: 15px;
+        overflow-y: auto;
+
+        .section-container {
+            display: inline-block;
+        }
+    } 
+
+    .preview {
+        background-color: #fdfdfd;
+        overflow-y: auto;
+        overflow-x: auto !important;
+        &-container {
+            height: 675px !important;
+            width: 1200px !important;
+            border: 4px gray;
+        } 
+    }
+
+    .description {
+        background-color: white;
+        padding: 10px;
+        border-left: 1px solid rgb(221, 221, 221);
+        overflow: auto;
+    }
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgb(117, 117, 117);
+}
+
+.pl-25 {
+    padding-left: 25px !important;
+}
+
+.pl-20 {
+    padding-left: 20px !important;
+}
+
+.pl-10 {
+    padding-left: 10px !important;
+}
+
+.pl-5 {
+    padding-left: 5px !important;
+}
+
+.pr-5 {
+    padding-right: 5px !important;
+}
+
+.pr-10 {
+    padding-right: 10px !important;
+}
+
+.mr-5 {
+    margin-right: 5px !important;
+}
+
+.mr-10 {
+    margin-right: 10px !important;
+}
+
+.ml-5 {
+    margin-left: 5px !important;
+}
+
+.ml-10 {
+    margin-left: 10px !important;
+}
+
+.ml-20 {
+    margin-left: 20px !important;
+}
+
+.ml-25 {
+    margin-left: 25px !important;
+}
+
+.accordion-item {
+    border: 0 !important;
+}
+
+.accordion-header,
+.accordion-button {
+    border: 0 !important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #eee;
+        border-radius: 10px;
+    }
+
+    &-selected {
+        color: #8a92ff;
+        font-weight: bold;
+    }
+
+    &-details {
+        height: 45px;
+        cursor: pointer;
+        .label {
+            margin-top: 20px;
+        }
+    }
+}
+
+.tab-content-close {
+    display: none;
+    transition: all 0.35s;
+}
+
+.tab-content-open {
+    display: block;
+    transition: all 0.35s;
+}
+
+.navbar-editor {
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.target {
+    font-weight: bold;
+    color: #fbfbfb;
+    animation-name: leftToRight;
+    animation-duration: 8.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation: rightToLeft 4.5s linear infinite; */
+}
+
+@keyframes leftToRight {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    30% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.card-caller {
+    background-color: rgb(255, 255, 255);
+    font-weight: bolder;
+
+    &-module {
+        background-color: #8a92ff;
+        font-weight: bolder;
+    }
+}
+
+.blink_me {
+    animation: blinker 2.2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

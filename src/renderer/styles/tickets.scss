@@ -1,0 +1,66 @@
+.ticketx {
+  position: relative;
+  box-sizing: border-box;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto 0;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 2px 2px 15px 0px #66666b;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    height: 6px;
+    width: 290px;
+  }
+
+  &:before {
+    top: -5px;
+    background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -8px / 16px 16px
+      repeat-x;
+  }
+
+  &:after {
+    bottom: -5px;
+    background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -2px / 16px 16px
+      repeat-x;
+  }
+}
+
+.ticketx__content {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 6px solid #d8d8d8;
+  padding: 8px;
+}
+
+.ticketx__text {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.linear-wipe {
+  text-align: center;
+
+  background: linear-gradient(to right, rgb(12, 69, 102) 20%, #ff0 40%, rgb(156, 27, 146) 60%, rgb(38, 218, 164) 80%);
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 1s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}

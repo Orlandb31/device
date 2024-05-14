@@ -1,0 +1,20 @@
+.header {
+    border-bottom: none !important;
+    //background-color: $fb-color-palette-5 !important;
+
+    &-fb {
+        background-color: transparent !important;
+    }
+
+    &-container {
+        &-fb {
+            border: 2px solid var(--unnamed-color-d7d8dd);
+            background: #ffffff 0% 0% no-repeat padding-box;
+            border: 2px solid #d7d8dd;
+            border-radius: 15px;
+            opacity: 1;
+            padding: 6px;
+        }
+    }
+}
+ 
